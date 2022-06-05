@@ -1,0 +1,74 @@
+.wrapper{
+    display:flex;
+    width: 30%;
+    height: 360px;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    background-color: #282836;
+    border-radius: 6px;
+}
+.outer-wrap{
+    display: flex;
+    width: 100%;
+    height: 620px;
+    background-color: #1c1e29;
+    justify-content: center;
+    align-items: center;
+}
+.logobox{
+    width: 100%;
+    height: 35%;
+    display: flex;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    padding: 10px;
+    overflow: hidden;
+}
+.room{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    color: white;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.room label{
+    color: white;
+    font-weight: bold;
+    height: 20px;
+}
+.room input{
+    height: 30px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    font-weight: bold;
+    outline: none;
+    border: none;
+}
+.room button{
+    height : 32px;
+    width: 75px;
+    background-color: #4aed88;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-left: 78%;
+}
+.new-room-invite{
+    color: white;
+    font-size: 15px;
+    text-transform: capitalize;
+    height : 10%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.new-room-invite a{
+    color: #4aed88;
+}
