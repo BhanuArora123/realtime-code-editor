@@ -3,7 +3,6 @@ import {BrowserRouter, Routes, Route} from "react-router-dom";
 import Home from './pages/Home';
 import Editor from './pages/Editor';
 import { Toaster } from 'react-hot-toast';
-
 function App() {
   return (
     <>
