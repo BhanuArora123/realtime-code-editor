@@ -5,6 +5,8 @@ import "./Home.css";
 import toast from "react-hot-toast";
 import ioObj from "../utils/ioCon";
 import { JOIN, SYNC_CODE } from "../utils/actions";
+import { useDispatch } from "react-redux";
+import { codeActions } from "../store/code";
 const Home = (props) => {
     useEffect( () => {
         async function socketConn() {
@@ -17,10 +19,11 @@ const Home = (props) => {
               console.log(error);
             })
         }
-        socketConn();
+        // socketConn();
       }, []);
     const [roomId,setRoomId] = useState();
     const [userName,setuserName] = useState();
+    const dispatch = useDispatch();
     // const socket = ioObj.getIoCon;
     const changeRoomIdHandler = (event) => {
         setRoomId(event.target.value);
@@ -36,6 +39,9 @@ const Home = (props) => {
     const submitHandler = (event) => {
         event.preventDefault();
         localStorage.setItem("name",userName);
+        dispatch(codeActions.updateCodeState({
+            currentUserName:userName
+        }))
         window.location.href="http://localhost:3000/editor/"+roomId;
     }
     return (

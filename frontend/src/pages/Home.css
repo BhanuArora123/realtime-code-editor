@@ -49,6 +49,7 @@
     font-weight: bold;
     outline: none;
     border: none;
+    color:black;
 }
 .room button{
     height : 32px;
@@ -59,6 +60,7 @@
     border-radius: 5px;
     font-weight: bold;
     margin-left: 78%;
+    color: black;
 }
 .new-room-invite{
     color: white;
@@ -71,4 +73,5 @@
 }
 .new-room-invite a{
     color: #4aed88;
+    text-decoration: underline;
 }

@@ -7,14 +7,26 @@ const codeSchema = seq.define("code",{
         allowNull:false
     },
     codeId:{
-        type:INTEGER,
+        type:STRING,
         allowNull:false,
-        primaryKey:true,
-        autoIncrement:true
+        primaryKey:true
     },
     codeSnippet:{
         type:STRING,
         defaultValue:""
+    },
+    language :{
+        type : STRING,
+        defaultValue:"js",
+        allowNull:false
+    },
+    codeOutput : {
+        type : STRING,
+        defaultValue:""
+    },
+    errors : {
+        type : STRING,
+        allowNull:true
     }
 },{
     timestamps:true
